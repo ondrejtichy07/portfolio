@@ -1,0 +1,62 @@
+.usp {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.usp__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.usp__card {
+  padding: 2rem 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.usp__stat {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.2rem;
+  color: var(--accent);
+}
+
+.usp__card:nth-child(even) .usp__stat {
+  color: var(--accent-2);
+}
+
+.usp__card h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+}
+
+.usp__desc {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+@media (max-width: 1080px) {
+  .usp__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .usp__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.usp__hosting {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}

@@ -1,0 +1,92 @@
+.hero {
+  border-top: none;
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 0.55rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  padding: 0.45rem 1rem;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin-bottom: 2.5rem;
+}
+
+.hero__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2f9e5e;
+  box-shadow: 0 0 0 3px rgba(47, 158, 94, 0.18);
+}
+
+.hero__headline {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(3.2rem, 11vw, 8.5rem);
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.hero__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.hero__note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  max-width: 340px;
+  color: var(--ink-soft);
+}
+
+.hero__note svg {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.hero__note p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.hero__lockup {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3.6rem);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+@media (max-width: 720px) {
+  .hero__row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+  .hero__lockup {
+    text-align: left;
+  }
+}
