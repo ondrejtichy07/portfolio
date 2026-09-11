@@ -11,7 +11,7 @@ export default function Hero() {
         </div>
 
         <h1 className="hero__headline">
-          WEBOVKA
+          WEBOVKY
           <br />
           ZA TÝDEN.
         </h1>
