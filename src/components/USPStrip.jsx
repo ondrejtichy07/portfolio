@@ -36,7 +36,7 @@ export default function USPStrip() {
         ))}
       </div>
       <p className="container usp__hosting">
-        Jediný pravidelný náklad po spuštění je hosting webu - cca 199 Kč / měsíc.
+        Jediný pravidelný náklad po spuštění je hosting webu - cca 199 Kč / rok.
       </p>
     </section>
   );
